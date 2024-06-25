@@ -54,7 +54,7 @@ const Navbar = () => {
 
         {/* Main navbar content for larger screens */}
         <div className="hidden md:flex flex-col items-center">
-          <div className="flex justify-center items-center pt-6">
+          <div className="flex justify-center items-center pt-2">
             <Link href={'/'}>
               <Image
                 width={190}
@@ -79,10 +79,10 @@ const Navbar = () => {
               </a>
             </div>
             <div className="flex space-x-6">
-              <Link href="/kosttillskott" className="text-white hover:text-yellow-500">Kosttillskott</Link>
-              <Link href="/drycker" className="text-white hover:text-yellow-500">Drycker</Link>
-              <Link href="/klader" className="text-white hover:text-yellow-500">Kläder</Link>
-              <Link href="/traningstillbehor" className="text-white hover:text-yellow-500">Träningstillbehör</Link>
+              <Link href="/shop" className="text-white hover:text-cyan-400">Kosttillskott</Link>
+              <Link href="/drycker" className="text-white hover:text-cyan-400">Drycker</Link>
+              <Link href="/klader" className="text-white hover:text-cyan-400">Kläder</Link>
+              <Link href="/traningstillbehor" className="text-white hover:text-cyan-400">Träningstillbehör</Link>
             </div>
             <div className="flex items-center space-x-6">
               <SearchIcon onClick={toggleSearch} className="transform transition-transform duration-200 hover:scale-110 text-white cursor-pointer" />
