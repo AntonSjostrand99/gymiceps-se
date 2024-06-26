@@ -26,7 +26,8 @@ export default function Home() {
       </div>
 
 
-      <div className="">
+      <div className="border border-gray-400 container mx-auto ">
+      <h1>vad är du sugen på förnågot?</h1>
         <Carousel />
       </div>
 
