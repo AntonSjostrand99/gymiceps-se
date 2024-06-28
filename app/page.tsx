@@ -18,7 +18,7 @@ export default function Home() {
       <Sale />
       <main className="flex min-h-screen flex-col items-start justify-between container mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollToTopButton />
-        <section className="w-full mb-8">
+        <section className="w-full mb-8 mt-12">
           <h1 className="font-bold text-xl sm:text-2xl">Vad är du ute efter?</h1>
           <CategoryCarousel />
         </section>

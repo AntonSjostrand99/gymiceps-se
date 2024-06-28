@@ -17,8 +17,8 @@ const FilterSidebar = () => {
 
   // Close sidebar when clicking outside of it
   useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (isOpen && !document.getElementById('sidebar').contains(event.target)) {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (isOpen && !document.getElementById('sidebar')?.contains(event.target as Node)) {
         closeSidebar();
       }
     };
