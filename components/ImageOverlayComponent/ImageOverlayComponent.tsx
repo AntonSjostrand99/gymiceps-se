@@ -1,23 +1,34 @@
-// components/ImageOverlayComponent.js
 
 import React from 'react';
 
-const ImageOverlayComponent = () => {
+interface ImageOverlayComponentProps {
+  imgSrc: string;
+  altText: string;
+  mainText: string;
+  descriptionText: string;
+  buttonText: string;
+}
+
+const ImageOverlayComponent: React.FC<ImageOverlayComponentProps> = ({
+  imgSrc,
+  altText,
+  mainText,
+  descriptionText,
+  buttonText,
+}) => {
   return (
-    <div className="relative  bg-cyan-400">
+    <div className="relative bg-custom-ligt-blue p-4">
       <img
-        src="/Gymiceps.png"
-        alt="Beskrivande text"
-        className="w-full h-auto"
+        src={imgSrc}
+        alt={altText}
+        className="w-full h-auto mb-4"
       />
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-        <div className="text-white text-center">
-          <h1 className="text-4xl font-bold text-black">Text över bilden</h1>
-          <p className="mt-2">Beskrivningstext här</p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
-            Knapp
-          </button>
-        </div>
+      <div className="text-center">
+        <h1 className="text-2xl font-bold text-black mb-2">{mainText}</h1>
+        <p className="mb-4">{descriptionText}</p>
+        <button className="hover:bg-custom-ligt-blue border hover:border-white bg-white text-black border-custom-ligt-blue font-bold py-2 px-4">
+          {buttonText}
+        </button>
       </div>
     </div>
   );

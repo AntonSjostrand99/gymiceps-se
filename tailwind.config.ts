@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         "custom-blue": "#003049",
+        "custom-ligt-blue": "#87CEFA",
         
       },
     },
