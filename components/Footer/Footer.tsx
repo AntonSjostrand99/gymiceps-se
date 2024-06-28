@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" bg-custom-blue text-white">
+    <footer className=" bg-custom-blue text-white mt-10">
       {/* Nyhetsbrevssektion */}
       <div className=" bg-blue-300 py-6">
         <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between">
