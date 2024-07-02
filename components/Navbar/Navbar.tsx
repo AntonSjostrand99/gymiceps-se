@@ -80,7 +80,7 @@ const Navbar = () => {
             </div>
             <div className="flex space-x-6">
               <Link href="/shop" className="text-white hover:text-cyan-400">Kosttillskott</Link>
-              <Link href="/drycker" className="text-white hover:text-cyan-400">Drycker</Link>
+              <Link href="/drycker" className="text-white hover:text-cyan-400">Dryck</Link>
               <Link href="/klader" className="text-white hover:text-cyan-400">Kläder</Link>
               <Link href="/traningstillbehor" className="text-white hover:text-cyan-400">Träningstillbehör</Link>
             </div>
@@ -94,11 +94,11 @@ const Navbar = () => {
 
         {/* Dropdown menu for small screens */}
         {menuOpen && (
-          <div className="md:hidden flex flex-col items-center justify-center space-y-4 mt-4">
-            <Link href="/kosttillskott" className="text-white hover:text-yellow-500">Kosttillskott</Link>
-            <Link href="/drycker" className="text-white hover:text-yellow-500">Drycker</Link>
-            <Link href="/klader" className="text-white hover:text-yellow-500">Kläder</Link>
-            <Link href="/traningstillbehor" className="text-white hover:text-yellow-500">Träningstillbehör</Link>
+          <div className="md:hidden flex flex-col items-start justify-center space-y-4 mt-4">
+            <Link href="/shop" className="text-white hover:text-cyan-400">Kosttillskott</Link>
+            <Link href="/drycker" className="text-white hover:text-cyan-400">Dryck</Link>
+            <Link href="/klader" className="text-white hover:text-cyan-400">Kläder</Link>
+            <Link href="/traningstillbehor" className="text-white hover:text-cyan-400">Träningstillbehör</Link>
             <div className="flex space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="transform transition-transform duration-200 hover:scale-110">
                 <FacebookIcon className='text-white' />
